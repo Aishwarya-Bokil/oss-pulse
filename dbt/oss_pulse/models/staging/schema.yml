@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: stg_github_repos
+    description: "One row per repo per day, deduplicated from the raw github_repos table (latest snapshot of the day wins)."
+    columns:
+      - name: repo_name
+        data_tests:
+          - not_null
+      - name: snapshot_date
+        data_tests:
+          - not_null

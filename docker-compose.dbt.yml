@@ -1,0 +1,13 @@
+name: oss-pulse-dbt
+
+services:
+  dbt:
+    build:
+      context: ./dbt
+      dockerfile: Dockerfile
+    volumes:
+      - ./dbt:/usr/app
+      - ./config:/usr/app/config
+    working_dir: /usr/app/oss_pulse
+    environment:
+      DBT_PROFILES_DIR: /usr/app

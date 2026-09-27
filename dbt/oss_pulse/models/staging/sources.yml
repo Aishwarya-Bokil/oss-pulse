@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: github
+    database: oss-pulse-509119
+    schema: oss_pulse_raw
+    tables:
+      - name: github_repos
+        description: "Raw daily snapshots of GitHub repo stats, loaded by the github_ingest Airflow DAG. One row per repo per run; may contain duplicates."

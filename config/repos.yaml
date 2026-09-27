@@ -1,0 +1,11 @@
+repos:
+  - apache/airflow
+  - dbt-labs/dbt-core
+  - apache/spark
+  - prefecthq/prefect
+  - dagster-io/dagster
+  - meltano/meltano
+  - airbytehq/airbyte
+  - trinodb/trino
+  - duckdb/duckdb
+  - openai/openai-python
