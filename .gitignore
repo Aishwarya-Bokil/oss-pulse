@@ -1,6 +1,5 @@
-# Credentials & env
 .env
-*.json  # service account keys
+*.json
 
 # dbt
 dbt/target/

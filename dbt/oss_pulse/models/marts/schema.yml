@@ -1,0 +1,12 @@
+version: 2
+
+models:
+  - name: repo_growth_daily
+    description: "Daily per-repo stars/forks/open_issues with day-over-day change, built on top of stg_github_repos."
+    columns:
+      - name: repo_name
+        data_tests:
+          - not_null
+      - name: snapshot_date
+        data_tests:
+          - not_null
